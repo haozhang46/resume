@@ -190,11 +190,10 @@ export const Template1: React.FC<Props> = props => {
                   </div>
                   <div>
                     {education.major && <span>{education.major}</span>}
-                    {education.academic_degree && (
-                      <span className="sub-info" style={{ marginLeft: '4px' }}>
-                        ({education.academic_degree})
-                      </span>
-                    )}
+
+                    <span className="sub-info" style={{ marginLeft: '4px' }}>
+                      大专
+                    </span>
                   </div>
                 </div>
               );

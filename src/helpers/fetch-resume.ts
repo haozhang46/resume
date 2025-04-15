@@ -8,9 +8,7 @@ export function fetchResume(
   branch: string,
   user: string
 ): Promise<ResumeConfig> {
-  return fetch(
-    `https://raw.githubusercontent.com/${user}/${user}/${branch}/resume.json`
-  )
+  return fetch(`./resume.json`)
     .then(data => {
       if (data.status !== 200) {
         return Promise.reject(new Error());

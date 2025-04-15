@@ -12,7 +12,7 @@ import './index.less';
 registerLocale('en-US', EN_US_LOCALE);
 
 const Page = () => {
-  const [title, changeTitle] = useState('Resume Generator');
+  const [title, changeTitle] = useState('梁灏章');
   useEffect(() => {
     const search = typeof window !== 'undefined' && window.location.search;
     const query = qs.parse(search);
@@ -24,9 +24,9 @@ const Page = () => {
   const lang = getLanguage();
   return (
     <IntlProvider locale={lang} messages={getLocale(lang)}>
-      <Helmet>
+      {/* <Helmet>
         <title>{title}</title>
-      </Helmet>
+      </Helmet> */}
       <Header />
       <Content />
       <Footer />
